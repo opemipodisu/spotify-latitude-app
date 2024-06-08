@@ -1,0 +1,19 @@
+<svelte:head>
+  <title>Demo project</title>
+</svelte:head>
+<View class="gap-8 p-8">
+  <Row>
+    <Text.H2 class="font-bold">Top 50 Spotify music dataset (2010 to 2019)</Text.H2>
+  </Row>
+  <Row>
+    <LineChart
+      query="firstagg"
+      x="music_year"
+      y="title"
+    />
+  </Row>
+  <Row>
+    <Table query="first" />
+  </Row>
+</View>
+
